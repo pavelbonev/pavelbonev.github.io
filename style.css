@@ -56,24 +56,34 @@ p { margin: 0; }
 .bar nav a:hover, .bar nav a[aria-current] { color: var(--text); text-decoration: none; }
 @media (max-width: 720px) { .bar nav .wide { display: none; } }
 
-/* the language switcher: "EN" in the top bar, the six languages below it */
+/* the language drop-down: this language's flag and name in the top bar, the six languages with flags below it */
 .lang { position: relative; }
 .lang summary {
-  list-style: none; cursor: pointer; color: var(--text-2); font-size: 14px; font-weight: 700;
-  padding: 4px 10px; border: 1px solid var(--surface-stroke); border-radius: 10px;
+  list-style: none; cursor: pointer; display: flex; align-items: center; gap: 8px;
+  color: var(--text); font-size: 15px; font-weight: 600;
+  padding: 6px 10px 6px 8px; background: var(--tonal); border: 1px solid var(--surface-stroke); border-radius: 10px;
 }
 .lang summary::-webkit-details-marker { display: none; }
-.lang summary::after { content: " \25BE"; }
-.lang[open] summary, .lang summary:hover { color: var(--text); }
+.lang summary::after {
+  content: ""; width: 7px; height: 7px; margin: -3px 2px 0 2px;
+  border-right: 2px solid var(--text-2); border-bottom: 2px solid var(--text-2); transform: rotate(45deg);
+  transition: transform .15s;
+}
+.lang[open] summary::after { transform: rotate(-135deg); margin-top: 3px; }
+.lang summary:hover, .lang[open] summary { border-color: var(--text-2); }
+.flag { width: 21px; height: 14px; border-radius: 3px; flex: none; box-shadow: 0 0 0 1px rgba(255, 255, 255, .15); }
 .lang-menu {
-  position: absolute; right: 0; top: calc(100% + 8px); z-index: 20; min-width: 150px; padding: 6px;
+  position: absolute; right: 0; top: calc(100% + 8px); z-index: 20; min-width: 170px; padding: 6px;
   background: var(--surface); border: 1px solid var(--surface-stroke); border-radius: 12px;
   box-shadow: 0 12px 32px rgba(0, 0, 0, .45);
 }
-.bar nav .lang-menu a { display: block; padding: 8px 12px; border-radius: 8px; color: var(--text-2); }
+.bar nav .lang-menu a {
+  display: flex; align-items: center; gap: 10px; padding: 9px 12px; border-radius: 8px; color: var(--text-2);
+}
 .bar nav .lang-menu a:hover { background: var(--tonal); color: var(--text); }
 .bar nav .lang-menu a[aria-current] { color: var(--gold); }
 .bar nav { align-items: center; }
+@media (max-width: 420px) { .lang-name { display: none; } }
 
 /* buttons */
 .btn {
