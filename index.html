@@ -1,10 +1,252 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>NEARena</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEARena: Games for Friends</title>
+<meta name="description" content="30 games for 2 to 4 phones nearby over Bluetooth. Cards, board games, arcade, logic and solitaire. No internet, no accounts, no ads.">
+<meta name="theme-color" content="#0C101C">
+<meta property="og:title" content="NEARena: Games for Friends">
+<meta property="og:description" content="30 games for 2 to 4 phones nearby over Bluetooth. No internet, no ads.">
+<meta property="og:image" content="img/icon.png">
+<link rel="icon" type="image/png" href="img/icon.png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="img/icon.png" alt=""><span><span class="ne">NE</span><span class="arena">ARena</span></span></a>
+    <nav>
+      <a class="wide" href="#how">How it works</a>
+      <a class="wide" href="#games">Games</a>
+      <a class="wide" href="#pro">Free &amp; Pro</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <span class="deco hex" style="top: 9%; left: 46%"></span>
+    <span class="deco hex small" style="top: 18%; left: 54%"></span>
+    <span class="deco tri" style="bottom: 4%; right: 30%"></span>
+    <span class="deco dot" style="top: 12%; left: 6%"></span>
+    <span class="deco die" style="bottom: 9%; left: 44%"></span>
+    <span class="deco chip" style="top: 58%; right: 2%"></span>
+    <span class="deco chip cy" style="top: 6%; right: 38%"></span>
+
+    <div class="wrap">
+      <div>
+        <div class="wordmark"><span class="ne">NE</span><span class="arena">ARena</span></div>
+        <h1 class="tag">30 games for friends nearby</h1>
+        <p class="lead">Up to 4 phones connect over Bluetooth, and the whole table plays the same game, each on their own phone. On a plane, in the car, at the cottage, on the beach.</p>
+        <div class="pills">
+          <span class="pill"><i style="background: var(--cyan)"></i>Up to 4 phones</span>
+          <span class="pill"><i style="background: var(--coral)"></i>No internet</span>
+          <span class="pill"><i style="background: var(--gold)"></i>No accounts</span>
+          <span class="pill"><i style="background: var(--green)"></i>No ads, ever</span>
+        </div>
+        <div class="cta">
+          <a class="btn btn-cyan" href="https://play.google.com/store/apps/details?id=com.simplia.nearena">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 2.8v18.4c0 .6.6 1 1.2.7l15.4-8.9c.5-.3.5-1.1 0-1.4L5.2 2.1C4.6 1.8 4 2.2 4 2.8z"/></svg>
+            Get it on Google Play
+          </a>
+          <a class="btn btn-tonal" href="#games">See all 30 games</a>
+        </div>
+      </div>
+      <div class="phones">
+        <img class="phone a" src="img/02_room.png" alt="A room with four phones connected over Bluetooth and the board games ready to play." width="1080" height="1920">
+        <img class="phone b" src="img/01_cards.png" alt="Belote for four players: cards on the table, partners and opponents, each playing on their own phone." width="1080" height="1920">
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <p class="kicker">Made for the table</p>
+      <h2 class="title">Everyone plays, nobody needs Wi-Fi</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="icon" style="--c: var(--cyan)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 7 10 10-5 5V2l5 5L7 17"/></svg></div>
+          <h3>Bluetooth only</h3>
+          <p>The phones talk to each other directly. No internet, no servers, no sign-up.</p>
+        </div>
+        <div class="card">
+          <div class="icon" style="--c: var(--coral)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M17.5 14.5c2.2.3 3.6 2 4 4.5"/></svg></div>
+          <h3>2 to 4 players</h3>
+          <p>Empty seats are filled by bots, so four-player games work with two or three people too.</p>
+        </div>
+        <div class="card">
+          <div class="icon" style="--c: var(--gold)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="7" width="16" height="12" rx="3"/><path d="M12 3v4M9 12h.01M15 12h.01M9 16h6"/></svg></div>
+          <h3>Bots in 3 levels</h3>
+          <p>Easy, Normal and Hard in every game. Play alone for free, or let a bot take a seat.</p>
+        </div>
+        <div class="card">
+          <div class="icon" style="--c: var(--green)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6l-8-3z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></div>
+          <h3>No ads. Ever.</h3>
+          <p>No tracking and no data collection. Your games stay between your phones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" style="padding-top: 0">
+    <div class="wrap">
+      <p class="kicker">How it works</p>
+      <h2 class="title">Three taps to the same table</h2>
+      <div class="steps">
+        <div class="step" style="--c: var(--cyan)">
+          <h3>Create a room</h3>
+          <p>One person opens a room on their phone and picks the game.</p>
+        </div>
+        <div class="step" style="--c: var(--coral)">
+          <h3>Join it</h3>
+          <p>The others tap Join and find the room on the radar. Up to 4 phones.</p>
+        </div>
+        <div class="step" style="--c: var(--gold)">
+          <h3>Play</h3>
+          <p>Everyone sees their own cards and pieces. If someone has to leave, a bot takes over.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="games" style="background: var(--bg-deep)">
+    <div class="wrap">
+      <p class="kicker">30 games in 5 groups</p>
+      <h2 class="title">Something for every table</h2>
+      <p class="sub">Classic games known all over the world, drawn for phones: big cards, clear boards, readable from across the table.</p>
+      <div class="groups">
+        <div class="group" style="--c: var(--cyan)">
+          <h3>Arcade</h3>
+          <ul>
+            <li>Ping Pong <span class="free">FREE</span></li>
+            <li>Neon Crash <span class="free">FREE</span></li>
+            <li>Air Hockey</li>
+            <li>SwarmShip</li>
+            <li>Tanks</li>
+            <li>Mini Golf</li>
+          </ul>
+        </div>
+        <div class="group" style="--c: var(--coral)">
+          <h3>Logic</h3>
+          <ul>
+            <li>Bulls and Cows <span class="free">FREE</span></li>
+            <li>Four in a Row <span class="free">FREE</span></li>
+            <li>Sea Battle</li>
+            <li>Reversi</li>
+            <li>Dots and Boxes</li>
+            <li>Pairs</li>
+          </ul>
+        </div>
+        <div class="group" style="--c: var(--gold)">
+          <h3>Board</h3>
+          <ul>
+            <li>Ludo <span class="free">FREE</span></li>
+            <li>Nine Men's Morris <span class="free">FREE</span></li>
+            <li>Backgammon</li>
+            <li>Chess</li>
+            <li>Mancala</li>
+            <li>Dominoes</li>
+          </ul>
+        </div>
+        <div class="group" style="--c: var(--green)">
+          <h3>Cards</h3>
+          <ul>
+            <li>Pastra <span class="free">FREE</span></li>
+            <li>Sixty-Six <span class="free">FREE</span></li>
+            <li>Belote</li>
+            <li>Sergeant Major</li>
+            <li>Bridge</li>
+            <li>Makao</li>
+          </ul>
+        </div>
+        <div class="group" style="--c: #B49CFF">
+          <h3>Solitaire</h3>
+          <ul>
+            <li>Klondike <span class="free">FREE</span></li>
+            <li>Spider <span class="free">FREE</span></li>
+            <li>FreeCell</li>
+            <li>Nerts</li>
+            <li>Speed</li>
+            <li>Spite and Malice</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">Every game is free against the bot. <span class="free">FREE</span> games are also free with friends; the rest come with NEARena Pro.</p>
+    </div>
+  </section>
+
+  <section style="padding-bottom: 64px">
+    <div class="wrap">
+      <p class="kicker">Screenshots</p>
+      <h2 class="title">See it on the phone</h2>
+    </div>
+    <div class="shots">
+      <figure><img src="img/01_cards.png" loading="lazy" width="1080" height="1920" alt="Belote for four players: cards on the table, partners and opponents, each playing on their own phone."></figure>
+      <figure><img src="img/02_room.png" loading="lazy" width="1080" height="1920" alt="A room with four phones connected over Bluetooth and the board games ready to play."></figure>
+      <figure><img src="img/03_solitaire.png" loading="lazy" width="1080" height="1920" alt="Klondike solitaire race: four friends play the same deal and see each other's progress."></figure>
+      <figure><img src="img/04_chess.png" loading="lazy" width="1080" height="1920" alt="A game of chess against a friend, with the opening name and the list of moves."></figure>
+      <figure><img src="img/05_backgammon.png" loading="lazy" width="1080" height="1920" alt="A backgammon board at the start of a game, with the opening roll of the dice."></figure>
+      <figure><img src="img/06_neon.png" loading="lazy" width="1080" height="1920" alt="Neon Crash: four glowing lines race across the arena until only one is left."></figure>
+      <figure><img src="img/07_tanks.png" loading="lazy" width="1080" height="1920" alt="Tanks in a maze, two against two, with shells flying."></figure>
+      <figure><img src="img/08_games.png" loading="lazy" width="1080" height="1920" alt="The home screen with the arcade games and buttons to create or join a room."></figure>
+    </div>
+  </section>
+
+  <section id="pro" style="padding-top: 0">
+    <div class="wrap">
+      <p class="kicker">Free &amp; Pro</p>
+      <h2 class="title">Pay once, or not at all</h2>
+      <div class="plans">
+        <div class="plan">
+          <h3>Free</h3>
+          <p class="price">Forever</p>
+          <ul>
+            <li>All 30 games against the bot</li>
+            <li>10 games with friends</li>
+            <li>Rooms of up to 4 phones</li>
+            <li>Every Pro game 3 times with friends, to try it</li>
+          </ul>
+        </div>
+        <div class="plan pro">
+          <h3>NEARena <span class="badge">PRO</span></h3>
+          <p class="price">One-time purchase, not a subscription</p>
+          <ul>
+            <li>All 30 games with friends</li>
+            <li>Only the host needs it: everyone in the room plays</li>
+            <li>Future games at no extra cost</li>
+            <li>Still no ads</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <h2 class="title">Your friends are right here</h2>
+      <p class="sub">In English, German, French, Spanish, Italian and Bulgarian.</p>
+      <div class="cta">
+        <a class="btn btn-gold" href="https://play.google.com/store/apps/details?id=com.simplia.nearena">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 2.8v18.4c0 .6.6 1 1.2.7l15.4-8.9c.5-.3.5-1.1 0-1.4L5.2 2.1C4.6 1.8 4 2.2 4 2.8z"/></svg>
+          Get it on Google Play
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 <span class="ne">NE</span><span class="arena">ARena</span></span>
+    <nav>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="https://play.google.com/store/apps/details?id=com.simplia.nearena">Google Play</a>
+    </nav>
+  </div>
+</footer>
 
 </body>
 </html>
