@@ -8,6 +8,15 @@
 <meta name="theme-color" content="#0C101C">
 <link rel="icon" type="image/png" href="img/icon.png">
 <link rel="stylesheet" href="style.css">
+<!-- alternates -->
+<link rel="alternate" hreflang="en" href="privacy.html">
+<link rel="alternate" hreflang="bg" href="bg/privacy.html">
+<link rel="alternate" hreflang="de" href="de/privacy.html">
+<link rel="alternate" hreflang="es" href="es/privacy.html">
+<link rel="alternate" hreflang="fr" href="fr/privacy.html">
+<link rel="alternate" hreflang="it" href="it/privacy.html">
+<link rel="alternate" hreflang="x-default" href="privacy.html">
+<!-- /alternates -->
 </head>
 <body>
 
@@ -18,6 +27,19 @@
       <a class="wide" href="index.html#games">Games</a>
       <a class="wide" href="index.html#pro">Free &amp; Pro</a>
       <a href="privacy.html" aria-current="page">Privacy</a>
+      <!-- lang -->
+      <details class="lang">
+        <summary aria-label="Language">EN</summary>
+        <div class="lang-menu">
+          <a href="privacy.html" hreflang="en" lang="en" aria-current="true">English</a>
+          <a href="bg/privacy.html" hreflang="bg" lang="bg">Български</a>
+          <a href="de/privacy.html" hreflang="de" lang="de">Deutsch</a>
+          <a href="es/privacy.html" hreflang="es" lang="es">Español</a>
+          <a href="fr/privacy.html" hreflang="fr" lang="fr">Français</a>
+          <a href="it/privacy.html" hreflang="it" lang="it">Italiano</a>
+        </div>
+      </details>
+      <!-- /lang -->
     </nav>
   </div>
 </header>
@@ -29,7 +51,7 @@
 
     <div class="summary">
       <strong>In short:</strong> NEARena collects no personal data. There are no accounts, no servers, no ads and no
-      tracking, and the app itself sends nothing over the internet.
+      tracking, and apart from Google Play's purchase the app sends nothing over the internet.
     </div>
     <div class="facts">
       <div class="fact" style="--c: var(--cyan)"><b>0</b>accounts</div>
@@ -67,13 +89,15 @@
       <tr><td>BLUETOOTH_SCAN, BLUETOOTH_CONNECT, BLUETOOTH_ADVERTISE</td><td>To find, open and join rooms on Android 12 and later. Scanning is declared as not used for location.</td></tr>
       <tr><td>BLUETOOTH, BLUETOOTH_ADMIN, ACCESS_FINE_LOCATION</td><td>The same on Android 8 to 11 only, where Android requires them for Bluetooth.</td></tr>
       <tr><td>VIBRATE</td><td>A short vibration in some games, for example when somebody calls "Makao!".</td></tr>
+      <tr><td>BILLING, INTERNET, ACCESS_NETWORK_STATE</td><td>Added by Google Play's purchase library: to buy Pro, and for the technical data the library sends Google.</td></tr>
     </table>
-    <p>The app does not ask for access to the internet, contacts, camera, microphone, photos or files.</p>
+    <p>The app does not ask for access to your contacts, camera, microphone, photos or files.</p>
 
     <h2 style="--c: var(--green)">Purchases</h2>
     <p>NEARena Pro is a one-time purchase made through Google Play. Google handles the payment under the
       <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. We never see your name, e-mail or
-      payment details; the app only learns from Google Play whether Pro has been bought.</p>
+      payment details; the app only learns from Google Play whether Pro has been bought. Google's purchase library in
+      the app also sends Google technical data about the purchase, under the same policy.</p>
 
     <h2 style="--c: #B49CFF">Children</h2>
     <p>NEARena collects no personal data from anyone, children included. There are no ads, no chat and no way to

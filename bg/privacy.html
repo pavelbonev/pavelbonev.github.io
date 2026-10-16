@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEARena: политика за поверителност</title>
+<meta name="description" content="NEARena не събира лични данни: без акаунти, сървъри, реклами и проследяване.">
+<meta name="theme-color" content="#0C101C">
+<link rel="icon" type="image/png" href="../img/icon.png">
+<link rel="stylesheet" href="../style.css">
+<!-- alternates -->
+<link rel="alternate" hreflang="en" href="../privacy.html">
+<link rel="alternate" hreflang="bg" href="../bg/privacy.html">
+<link rel="alternate" hreflang="de" href="../de/privacy.html">
+<link rel="alternate" hreflang="es" href="../es/privacy.html">
+<link rel="alternate" hreflang="fr" href="../fr/privacy.html">
+<link rel="alternate" hreflang="it" href="../it/privacy.html">
+<link rel="alternate" hreflang="x-default" href="../privacy.html">
+<!-- /alternates -->
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="../img/icon.png" alt=""><span><span class="ne">NE</span><span class="arena">ARena</span></span></a>
+    <nav>
+      <a class="wide" href="index.html#games">Игри</a>
+      <a class="wide" href="index.html#pro">Безплатно и Pro</a>
+      <a href="privacy.html" aria-current="page">Поверителност</a>
+      <!-- lang -->
+      <details class="lang">
+        <summary aria-label="Език">BG</summary>
+        <div class="lang-menu">
+          <a href="../privacy.html" hreflang="en" lang="en">English</a>
+          <a href="../bg/privacy.html" hreflang="bg" lang="bg" aria-current="true">Български</a>
+          <a href="../de/privacy.html" hreflang="de" lang="de">Deutsch</a>
+          <a href="../es/privacy.html" hreflang="es" lang="es">Español</a>
+          <a href="../fr/privacy.html" hreflang="fr" lang="fr">Français</a>
+          <a href="../it/privacy.html" hreflang="it" lang="it">Italiano</a>
+        </div>
+      </details>
+      <!-- /lang -->
+    </nav>
+  </div>
+</header>
+
+<main class="doc">
+  <div class="wrap">
+    <h1>Политика за поверителност</h1>
+    <p class="updated">Последна промяна: 16 октомври 2026 · Отнася се за приложението NEARena за Android (com.simplia.nearena)</p>
+
+    <div class="summary">
+      <strong>Накратко:</strong> NEARena не събира лични данни. Няма акаунти, сървъри, реклами и проследяване, а освен покупката през Google Play приложението не праща нищо по интернет.
+    </div>
+    <div class="facts">
+      <div class="fact" style="--c: var(--cyan)"><b>0</b>акаунта</div>
+      <div class="fact" style="--c: var(--coral)"><b>0</b>сървъра</div>
+      <div class="fact" style="--c: var(--gold)"><b>0</b>реклами</div>
+      <div class="fact" style="--c: var(--green)"><b>0</b>проследяване</div>
+    </div>
+
+    <h2 style="--c: var(--cyan)">Какво остава на телефона ти</h2>
+    <p>Тези неща се пазят само на телефона ти, в паметта на приложението. Ние никога не ги получаваме:</p>
+    <ul>
+      <li>никът ти и случаен номер на играча, който приложението прави при първото пускане;</li>
+      <li>хората, с които си играл, любимите ти и победите ти срещу тях;</li>
+      <li>настройките ти (нивото на бота, вида на дъската и други) и безплатните ти проби на Pro.</li>
+    </ul>
+    <p>Ако архивът на Android е включен, Android може да пази копие на тези данни в Google акаунта ти, за да се върнат на нов телефон. Това решаваш ти в настройките на телефона. Когато изтриеш приложението, данните изчезват от телефона.</p>
+
+    <h2 style="--c: var(--coral)">Bluetooth</h2>
+    <ul>
+      <li>Bluetooth служи само за да свърже телефоните в стаята направо помежду им.</li>
+      <li>Докато си домакин на стая, телефоните наблизо, които търсят стаи, виждат ника ти и кратък код от номера ти на играч, за да те познаят приятелите, преди да влязат.</li>
+      <li>Телефоните в стаята си разменят никовете, номерата на играчите и ходовете в играта. Нищо друго не се праща и нищо не излиза от стаята.</li>
+      <li>На Android от 8 до 11 системата иска разрешение за местоположението, защото Android има нужда от него, за да търси Bluetooth устройства. NEARena не използва, не чете и не пази местоположението ти. На Android 12 и по-новите приложението изобщо не пита за местоположение.</li>
+    </ul>
+
+    <h2 style="--c: var(--gold)">Разрешения</h2>
+    <table>
+      <tr><th>Разрешение</th><th>За какво</th></tr>
+      <tr><td>BLUETOOTH_SCAN, BLUETOOTH_CONNECT, BLUETOOTH_ADVERTISE</td><td>За да намира, отваря и влиза в стаи на Android 12 и по-новите. Търсенето е обявено като неизползвано за местоположение.</td></tr>
+      <tr><td>BLUETOOTH, BLUETOOTH_ADMIN, ACCESS_FINE_LOCATION</td><td>Същото, само на Android от 8 до 11, където Android ги изисква за Bluetooth.</td></tr>
+      <tr><td>VIBRATE</td><td>Кратко вибриране в някои игри, например когато някой каже „Макао!“.</td></tr>
+      <tr><td>BILLING, INTERNET, ACCESS_NETWORK_STATE</td><td>Добавя ги библиотеката на Google Play за покупки: за да се купи Pro и за техническите данни, които библиотеката праща на Google.</td></tr>
+    </table>
+    <p>Приложението не иска достъп до контактите, камерата, микрофона, снимките или файловете ти.</p>
+
+    <h2 style="--c: var(--green)">Покупки</h2>
+    <p>NEARena Pro е еднократна покупка през Google Play. Плащането е при Google, според
+      <a href="https://policies.google.com/privacy">Политиката за поверителност на Google</a>. Ние никога не виждаме името, имейла или данните ти за плащане; приложението само научава от Google Play дали Pro е купен. Библиотеката на Google за покупки в приложението праща на Google и технически данни за покупката, според същата политика.</p>
+
+    <h2 style="--c: #B49CFF">Деца</h2>
+    <p>NEARena не събира лични данни от никого, включително от деца. Няма реклами, няма чат и няма как да се свържеш с непознати: играеш само с телефоните в същата стая.</p>
+
+    <h2 style="--c: var(--cyan)">Промени</h2>
+    <p>Ако тази политика се промени, новата версия ще излезе на тази страница с нова дата. Ако приложението някога започне да събира данни, тази страница ще го каже, преди тази версия да излезе.</p>
+
+    <h2 style="--c: var(--coral)">Връзка</h2>
+    <p>Въпроси за поверителността: пиши на имейла от
+      <a href="https://play.google.com/store/apps/details?id=com.simplia.nearena&amp;hl=bg">страницата на NEARena в Google Play</a>.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 <span class="ne">NE</span><span class="arena">ARena</span></span>
+    <nav>
+      <a href="index.html">Начало</a>
+      <a href="https://play.google.com/store/apps/details?id=com.simplia.nearena&amp;hl=bg">Google Play</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

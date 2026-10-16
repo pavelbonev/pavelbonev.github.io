@@ -56,6 +56,25 @@ p { margin: 0; }
 .bar nav a:hover, .bar nav a[aria-current] { color: var(--text); text-decoration: none; }
 @media (max-width: 720px) { .bar nav .wide { display: none; } }
 
+/* the language switcher: "EN" in the top bar, the six languages below it */
+.lang { position: relative; }
+.lang summary {
+  list-style: none; cursor: pointer; color: var(--text-2); font-size: 14px; font-weight: 700;
+  padding: 4px 10px; border: 1px solid var(--surface-stroke); border-radius: 10px;
+}
+.lang summary::-webkit-details-marker { display: none; }
+.lang summary::after { content: " \25BE"; }
+.lang[open] summary, .lang summary:hover { color: var(--text); }
+.lang-menu {
+  position: absolute; right: 0; top: calc(100% + 8px); z-index: 20; min-width: 150px; padding: 6px;
+  background: var(--surface); border: 1px solid var(--surface-stroke); border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .45);
+}
+.bar nav .lang-menu a { display: block; padding: 8px 12px; border-radius: 8px; color: var(--text-2); }
+.bar nav .lang-menu a:hover { background: var(--tonal); color: var(--text); }
+.bar nav .lang-menu a[aria-current] { color: var(--gold); }
+.bar nav { align-items: center; }
+
 /* buttons */
 .btn {
   display: inline-flex; align-items: center; gap: 10px;
