@@ -93,8 +93,10 @@
       <li>un ID casuale per l’app su questo telefono (l’accesso «Device ID» di Epic). Non c’è un account Epic: Epic non riceve nome, e-mail o numero di telefono;</li>
       <li>il tuo indirizzo IP, che serve a ogni connessione via internet;</li>
       <li>il codice della stanza e gli ID casuali dei telefoni nella stanza, finché la stanza è aperta. Con essi non si conservano nickname né niente di personale, e spariscono quando la stanza si chiude;</li>
+      <li>quando inviti via internet, un codice ricavato dall’ID giocatore casuale di ciascuno dei tuoi preferiti e dal tuo (un hash: non l’ID stesso, e nessun nickname), così i tuoi preferiti trovano la stanza senza codice. Sparisce con la stanza;</li>
       <li>dati tecnici sulla connessione che la libreria di Epic nell’app invia, come la sua versione e gli errori.</li>
     </ul>
+    <p>L’unico altro caso in cui l’app si collega a Epic è quando apri «Entra in una stanza» e hai preferiti con cui hai già giocato via internet: finché quella schermata è aperta, cerca ogni pochi secondi le stanze con il tuo codice, così le stanze dei tuoi preferiti compaiono sul radar senza codice della stanza. Senza preferiti così, quella schermata usa solo il Bluetooth.</p>
     <p>Poi i telefoni della stanza si scambiano le stesse cose che via Bluetooth (nickname, ID giocatore e mosse), cifrate. Di solito si collegano direttamente, e allora ogni telefono della stanza può vedere gli indirizzi IP degli altri, come in ogni connessione diretta via internet. Quando una rete non permette una connessione diretta, i dati passano per i server relay di Epic, che si limitano a inoltrarli.</p>
     <p>Epic tratta questi dati per nostro conto solo per far funzionare il servizio, su server negli Stati Uniti e in altri paesi. Noi non ne conserviamo nulla.</p>
 
@@ -123,7 +125,7 @@
     </ul>
 
     <h2 style="--c: #B49CFF">Bambini</h2>
-    <p>NEARena non raccoglie dati personali da nessuno, bambini compresi. Niente pubblicità, niente chat e nessun modo di trovare sconosciuti: si gioca solo con i telefoni nella stessa stanza o con amici che hanno il codice della tua stanza.</p>
+    <p>NEARena non raccoglie dati personali da nessuno, bambini compresi. Niente pubblicità, niente chat e nessun modo di trovare sconosciuti: si gioca solo con i telefoni nella stessa stanza o con amici che hanno il codice della tua stanza o sono tra i tuoi preferiti.</p>
 
     <h2 style="--c: var(--cyan)">Modifiche</h2>
     <p>Se questa informativa cambia, la nuova versione sarà pubblicata su questa pagina con una nuova data. Se l’app dovesse mai iniziare a raccogliere dati, questa pagina lo dirà prima che esca quella versione.</p>

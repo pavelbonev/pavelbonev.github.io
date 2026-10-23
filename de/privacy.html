@@ -93,8 +93,10 @@
       <li>eine zufällige ID für die App auf diesem Handy (die „Device ID“-Anmeldung von Epic). Es gibt kein Epic-Konto: Epic erhält keinen Namen, keine E-Mail-Adresse und keine Telefonnummer;</li>
       <li>deine IP-Adresse, die jede Verbindung über das Internet braucht;</li>
       <li>den Raumcode und die zufälligen IDs der Handys im Raum, solange der Raum offen ist. Dabei werden keine Spitznamen und nichts Persönliches gespeichert, und sie verschwinden, wenn der Raum geschlossen wird;</li>
+      <li>wenn du übers Internet einlädst, einen Code aus der zufälligen Spieler-ID jedes deiner Favoriten und aus deiner eigenen (ein Hash: nicht die ID selbst und kein Spitzname), damit deine Favoriten den Raum ohne Code finden. Er verschwindet mit dem Raum;</li>
       <li>technische Daten zur Verbindung, die die Bibliothek von Epic in der App sendet, etwa ihre Version und Fehler.</li>
     </ul>
+    <p>Sonst verbindet sich die App nur dann mit Epic, wenn du „Raum beitreten“ öffnest und Favoriten hast, mit denen du schon übers Internet gespielt hast: Solange dieser Bildschirm offen ist, sucht sie alle paar Sekunden Räume mit deinem Code, damit die Räume deiner Favoriten ohne Raumcode auf dem Radar erscheinen. Ohne solche Favoriten nutzt dieser Bildschirm nur Bluetooth.</p>
     <p>Die Handys im Raum tauschen dann dasselbe aus wie über Bluetooth (Spitznamen, Spieler-IDs und Spielzüge), verschlüsselt. Meist verbinden sie sich direkt, und dann sieht jedes Handy im Raum die IP-Adressen der anderen, wie bei jeder direkten Verbindung im Internet. Wenn ein Netz keine direkte Verbindung zulässt, laufen die Daten über die Relay-Server von Epic, die sie nur weiterleiten.</p>
     <p>Epic verarbeitet diese Daten für uns nur, um den Dienst zu betreiben, auf Servern in den USA und anderen Ländern. Wir selbst speichern nichts davon.</p>
 
@@ -123,7 +125,7 @@
     </ul>
 
     <h2 style="--c: #B49CFF">Kinder</h2>
-    <p>NEARena erhebt von niemandem personenbezogene Daten, auch nicht von Kindern. Es gibt keine Werbung, keinen Chat und keinen Weg, Fremde zu finden: Du spielst nur mit Handys im selben Raum oder mit Freunden, die deinen Raumcode haben.</p>
+    <p>NEARena erhebt von niemandem personenbezogene Daten, auch nicht von Kindern. Es gibt keine Werbung, keinen Chat und keinen Weg, Fremde zu finden: Du spielst nur mit Handys im selben Raum oder mit Freunden, die deinen Raumcode haben oder zu deinen Favoriten gehören.</p>
 
     <h2 style="--c: var(--cyan)">Änderungen</h2>
     <p>Wenn sich diese Erklärung ändert, erscheint die neue Fassung auf dieser Seite mit neuem Datum. Sollte die App jemals Daten erheben, steht das hier, bevor diese Version erscheint.</p>

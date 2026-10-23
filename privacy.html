@@ -106,8 +106,10 @@
       <li>your IP address, which every connection over the internet needs;</li>
       <li>the room code and the random IDs of the phones in the room, while the room is open. No nicknames and
         nothing personal are stored with them, and they disappear when the room closes;</li>
+      <li>when you invite over the internet, a code made from the random player ID of each of your favourites and from yours (a hash: not the ID itself, and no nickname), so that your favourites find the room without a code. It disappears with the room;</li>
       <li>technical data that Epic's library in the app sends about the connection, such as its version and errors.</li>
     </ul>
+    <p>The only other time the app connects to Epic is when you open “Join a room” and have favourites you have already played with over the internet: while that screen is open, it looks for rooms with your code every few seconds, so that your favourites' rooms show on the radar without a room code. Without such favourites, that screen looks only over Bluetooth.</p>
     <p>The phones in the room then exchange the same things as over Bluetooth (nicknames, player IDs and moves),
       encrypted. Usually they connect directly, and then each phone in the room can see the IP addresses of the
       others, as in any direct connection on the internet. When a network does not allow a direct connection, the data
@@ -144,7 +146,7 @@
 
     <h2 style="--c: #B49CFF">Children</h2>
     <p>NEARena collects no personal data from anyone, children included. There are no ads, no chat and no way to find
-      strangers: you play only with phones in the same room or with friends who have your room code.</p>
+      strangers: you play only with phones in the same room or with friends who have your room code or are among your favourites.</p>
 
     <h2 style="--c: var(--cyan)">Changes</h2>
     <p>If this policy changes, the new version will be published on this page with a new date. If the app ever

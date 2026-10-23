@@ -93,8 +93,10 @@
       <li>un ID aleatorio para la app en este móvil (el inicio de sesión «Device ID» de Epic). No hay cuenta de Epic: Epic no recibe nombre, correo ni número de teléfono;</li>
       <li>tu dirección IP, que necesita cualquier conexión por internet;</li>
       <li>el código de la sala y los ID aleatorios de los móviles que hay en ella, mientras la sala está abierta. Con ellos no se guardan apodos ni nada personal, y desaparecen cuando se cierra la sala;</li>
+      <li>cuando invitas por internet, un código hecho a partir del ID de jugador aleatorio de cada uno de tus favoritos y del tuyo (un hash: no el ID en sí, y sin apodo), para que tus favoritos encuentren la sala sin código. Desaparece con la sala;</li>
       <li>datos técnicos sobre la conexión que envía la biblioteca de Epic en la app, como su versión y los errores.</li>
     </ul>
+    <p>La única otra vez que la app se conecta a Epic es cuando abres «Unirse a una sala» y tienes favoritos con los que ya has jugado por internet: mientras esa pantalla está abierta, busca cada pocos segundos salas con tu código, para que las salas de tus favoritos aparezcan en el radar sin código de sala. Sin esos favoritos, esa pantalla solo usa Bluetooth.</p>
     <p>Después, los móviles de la sala intercambian lo mismo que por Bluetooth (apodos, ID de jugador y jugadas), cifrado. Normalmente se conectan directamente, y entonces cada móvil de la sala puede ver las direcciones IP de los demás, como en cualquier conexión directa por internet. Cuando una red no permite la conexión directa, los datos pasan por los servidores de retransmisión de Epic, que solo los reenvían.</p>
     <p>Epic trata estos datos por nuestra cuenta solo para que funcione el servicio, en servidores de Estados Unidos y otros países. Nosotros no guardamos nada de ello.</p>
 
@@ -123,7 +125,7 @@
     </ul>
 
     <h2 style="--c: #B49CFF">Niños</h2>
-    <p>NEARena no recoge datos personales de nadie, tampoco de niños. No hay anuncios, ni chat, ni forma de encontrar desconocidos: solo se juega con los móviles de la misma sala o con amigos que tienen el código de tu sala.</p>
+    <p>NEARena no recoge datos personales de nadie, tampoco de niños. No hay anuncios, ni chat, ni forma de encontrar desconocidos: solo se juega con los móviles de la misma sala o con amigos que tienen el código de tu sala o están entre tus favoritos.</p>
 
     <h2 style="--c: var(--cyan)">Cambios</h2>
     <p>Si esta política cambia, la nueva versión se publicará en esta página con una nueva fecha. Si la app empieza alguna vez a recoger datos, esta página lo dirá antes de que salga esa versión.</p>

@@ -93,8 +93,10 @@
       <li>un identifiant aléatoire pour l’application sur ce téléphone (la connexion « Device ID » d’Epic). Il n’y a pas de compte Epic : Epic ne reçoit ni nom, ni e-mail, ni numéro de téléphone ;</li>
       <li>ton adresse IP, nécessaire à toute connexion sur internet ;</li>
       <li>le code du salon et les identifiants aléatoires des téléphones du salon, tant que le salon est ouvert. Aucun pseudo ni rien de personnel n’est gardé avec eux, et ils disparaissent quand le salon se ferme ;</li>
+      <li>quand tu invites par internet, un code tiré de l’identifiant de joueur aléatoire de chacun de tes favoris et du tien (un hachage : pas l’identifiant lui-même, et pas de pseudo), pour que tes favoris trouvent le salon sans code. Il disparaît avec le salon ;</li>
       <li>des données techniques sur la connexion, envoyées par la bibliothèque d’Epic dans l’application, comme sa version et les erreurs.</li>
     </ul>
+    <p>Le seul autre cas où l’application se connecte à Epic, c’est quand tu ouvres « Rejoindre un salon » et que tu as des favoris avec qui tu as déjà joué par internet : tant que cet écran est ouvert, elle cherche toutes les quelques secondes les salons qui portent ton code, pour que les salons de tes favoris apparaissent sur le radar sans code de salon. Sans de tels favoris, cet écran n’utilise que le Bluetooth.</p>
     <p>Ensuite, les téléphones du salon échangent la même chose qu’en Bluetooth (pseudos, identifiants de joueur et coups), de façon chiffrée. En général, ils se connectent directement, et chaque téléphone du salon peut alors voir les adresses IP des autres, comme pour toute connexion directe sur internet. Quand un réseau ne permet pas de connexion directe, les données passent par les serveurs relais d’Epic, qui se contentent de les transmettre.</p>
     <p>Epic traite ces données pour nous, uniquement pour faire fonctionner le service, sur des serveurs aux États-Unis et dans d’autres pays. Nous-mêmes n’en gardons rien.</p>
 
@@ -123,7 +125,7 @@
     </ul>
 
     <h2 style="--c: #B49CFF">Enfants</h2>
-    <p>NEARena ne collecte aucune donnée personnelle de personne, enfants compris. Pas de pub, pas de chat et aucun moyen de trouver des inconnus : on joue seulement avec les téléphones du même salon ou avec des amis qui ont le code de ton salon.</p>
+    <p>NEARena ne collecte aucune donnée personnelle de personne, enfants compris. Pas de pub, pas de chat et aucun moyen de trouver des inconnus : on joue seulement avec les téléphones du même salon ou avec des amis qui ont le code de ton salon ou font partie de tes favoris.</p>
 
     <h2 style="--c: var(--cyan)">Modifications</h2>
     <p>Si cette politique change, la nouvelle version sera publiée sur cette page avec une nouvelle date. Si l’application se met un jour à collecter des données, cette page le dira avant la sortie de cette version.</p>
