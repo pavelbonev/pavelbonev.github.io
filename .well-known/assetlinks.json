@@ -4,7 +4,8 @@
     "namespace": "android_app",
     "package_name": "com.simplia.nearena",
     "sha256_cert_fingerprints":
-    ["3D:84:6D:C9:9F:0C:DF:42:8E:1D:C9:45:7F:B6:6C:E6:4D:4F:50:C5:3A:C7:39:18:07:E6:26:4D:3A:31:CF:2C"]
+    ["3D:84:6D:C9:9F:0C:DF:42:8E:1D:C9:45:7F:B6:6C:E6:4D:4F:50:C5:3A:C7:39:18:07:E6:26:4D:3A:31:CF:2C",
+      "D8:96:F6:3F:AD:B2:BA:9E:31:95:FF:02:5F:0B:16:98:D5:04:BD:D5:79:88:5E:3D:F3:C9:0F:4D:98:C4:2A:5D"]
   }
 },
   {
