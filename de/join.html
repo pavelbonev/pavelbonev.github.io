@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEARena</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0C101C">
+<link rel="icon" type="image/png" href="../img/icon.png">
+<link rel="stylesheet" href="../style.css?v=d7f0e97f">
+<!-- alternates -->
+<link rel="alternate" hreflang="en" href="../join.html">
+<link rel="alternate" hreflang="bg" href="../bg/join.html">
+<link rel="alternate" hreflang="de" href="../de/join.html">
+<link rel="alternate" hreflang="es" href="../es/join.html">
+<link rel="alternate" hreflang="fr" href="../fr/join.html">
+<link rel="alternate" hreflang="it" href="../it/join.html">
+<link rel="alternate" hreflang="x-default" href="../join.html">
+<!-- /alternates -->
+</head>
+<body>
+<!-- flags -->
+<svg width="0" height="0" style="position: absolute" aria-hidden="true">
+<symbol id="flag-en" viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice"><clipPath id="flag-en-t"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><path d="M0 0h60v30H0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#flag-en-t)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></symbol>
+<symbol id="flag-bg" viewBox="0 0 3 2" preserveAspectRatio="none"><path fill="#fff" d="M0 0h3v.67H0z"/><path fill="#00966E" d="M0 .66h3v.68H0z"/><path fill="#D62612" d="M0 1.33h3V2H0z"/></symbol>
+<symbol id="flag-de" viewBox="0 0 3 2" preserveAspectRatio="none"><path fill="#000" d="M0 0h3v.67H0z"/><path fill="#D00" d="M0 .66h3v.68H0z"/><path fill="#FFCE00" d="M0 1.33h3V2H0z"/></symbol>
+<symbol id="flag-es" viewBox="0 0 3 2" preserveAspectRatio="none"><path fill="#AA151B" d="M0 0h3v2H0z"/><path fill="#F1BF00" d="M0 .5h3v1H0z"/></symbol>
+<symbol id="flag-fr" viewBox="0 0 3 2" preserveAspectRatio="none"><path fill="#0055A4" d="M0 0h1.01v2H0z"/><path fill="#fff" d="M1 0h1.01v2H1z"/><path fill="#EF4135" d="M2 0h1v2H2z"/></symbol>
+<symbol id="flag-it" viewBox="0 0 3 2" preserveAspectRatio="none"><path fill="#009246" d="M0 0h1.01v2H0z"/><path fill="#fff" d="M1 0h1.01v2H1z"/><path fill="#CE2B37" d="M2 0h1v2H2z"/></symbol>
+</svg>
+<!-- /flags -->
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="../img/icon.png" alt=""><span><span class="ne">NE</span><span class="arena">ARena</span></span></a>
+    <nav>
+      <!-- lang -->
+      <details class="lang">
+        <summary aria-label="Sprache: Deutsch"><svg class="flag" width="21" height="14" aria-hidden="true"><use href="#flag-de"/></svg><span class="lang-name">Deutsch</span></summary>
+        <div class="lang-menu">
+          <a href="../join.html" hreflang="en" lang="en"><svg class="flag" width="21" height="14" aria-hidden="true"><use href="#flag-en"/></svg><span>English</span></a>
+          <a href="../bg/join.html" hreflang="bg" lang="bg"><svg class="flag" width="21" height="14" aria-hidden="true"><use href="#flag-bg"/></svg><span>Български</span></a>
+          <a href="../de/join.html" hreflang="de" lang="de" aria-current="true"><svg class="flag" width="21" height="14" aria-hidden="true"><use href="#flag-de"/></svg><span>Deutsch</span></a>
+          <a href="../es/join.html" hreflang="es" lang="es"><svg class="flag" width="21" height="14" aria-hidden="true"><use href="#flag-es"/></svg><span>Español</span></a>
+          <a href="../fr/join.html" hreflang="fr" lang="fr"><svg class="flag" width="21" height="14" aria-hidden="true"><use href="#flag-fr"/></svg><span>Français</span></a>
+          <a href="../it/join.html" hreflang="it" lang="it"><svg class="flag" width="21" height="14" aria-hidden="true"><use href="#flag-it"/></svg><span>Italiano</span></a>
+        </div>
+      </details>
+      <!-- /lang -->
+    </nav>
+  </div>
+</header>
+
+<!-- The invite's link (README "Поканата"): 404.html sends .../j/K7M3QP here as join.html#K7M3QP. -->
+<main class="join">
+  <div class="wrap">
+    <h1>Du bist zu einem Spiel eingeladen</h1>
+    <div class="code-card" id="code-card" hidden>
+      <span class="code-label">Raumcode</span>
+      <span class="code" id="code"></span>
+    </div>
+    <p class="how">Öffne NEARena, tippe auf „Raum beitreten“ und gib den Code ein.</p>
+    <div class="cta">
+      <a class="btn btn-cyan" id="open" hidden><span>NEARena öffnen</span></a>
+      <a class="btn btn-tonal" href="https://play.google.com/store/apps/details?id=com.simplia.nearena&amp;hl=de">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 2.8v18.4c0 .6.6 1 1.2.7l15.4-8.9c.5-.3.5-1.1 0-1.4L5.2 2.1C4.6 1.8 4 2.2 4 2.8z"/></svg>
+        Jetzt bei Google Play
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 <span class="ne">NE</span><span class="arena">ARena</span></span>
+    <nav>
+      <a href="index.html">Start</a>
+      <a href="privacy.html">Datenschutz</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+// The code as RoomCode reads it (the app's letters, without dashes and spaces), shown as K7M-3QP. On Android the
+// button opens the app with the invite's link (it goes to Google Play when NEARena is not installed); the language
+// menu keeps the code.
+(function () {
+  var LETTERS = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
+  var code = decodeURIComponent(location.hash.slice(1)).toUpperCase().replace(/[\s._-]/g, '');
+  for (var i = 0; i < code.length; i++) {
+    if (LETTERS.indexOf(code.charAt(i)) < 0) code = '';
+  }
+  if (code.length !== 6) code = '';
+  if (code) {
+    document.getElementById('code').textContent = code.slice(0, 3) + '-' + code.slice(3);
+    document.getElementById('code-card').hidden = false;
+    var links = document.querySelectorAll('.lang-menu a');
+    for (var j = 0; j < links.length; j++) links[j].href = links[j].getAttribute('href') + '#' + code;
+  }
+  if (/Android/i.test(navigator.userAgent)) {
+    var open = document.getElementById('open');
+    open.href = 'intent://pavelbonev.github.io/nearena/j/' + code
+        + '#Intent;scheme=https;package=com.simplia.nearena;end';
+    open.hidden = false;
+  }
+})();
+</script>
+</body>
+</html>

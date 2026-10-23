@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEARena</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0C101C">
+<meta property="og:title" content="NEARena">
+<meta property="og:image" content="https://pavelbonev.github.io/nearena/img/icon.png">
+<link rel="icon" type="image/png" href="/nearena/img/icon.png">
+<style>body { margin: 0; background: #0C101C; }</style>
+<script>
+// GitHub Pages shows this page for every address of the site that has no file, among them the invite's link
+// .../nearena/j/K7M3QP (README "Поканата"). With NEARena installed Android opens the app before any page (App Links);
+// here the code goes on to join.html in the phone's language, after the # so it never reaches a server.
+// Any other missing page goes to the home page.
+(function () {
+  var path = location.pathname;
+  var at = path.indexOf('/j/');
+  var site = at >= 0 ? path.slice(0, at + 1) : '/' + path.split('/')[1] + '/';
+  if (at < 0) {
+    location.replace(site);
+    return;
+  }
+  var code = path.slice(at + 3).replace(/\/+$/, '');
+  var langs = navigator.languages || [navigator.language || 'en'];
+  var folder = '';
+  for (var i = 0; i < langs.length; i++) {
+    var lang = String(langs[i]).slice(0, 2).toLowerCase();
+    if (lang === 'en') break;
+    if (['bg', 'de', 'es', 'fr', 'it'].indexOf(lang) >= 0) {
+      folder = lang + '/';
+      break;
+    }
+  }
+  location.replace(site + folder + 'join.html' + (code ? '#' + code : ''));
+})();
+</script>
+</head>
+<body>
+</body>
+</html>

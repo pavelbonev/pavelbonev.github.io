@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NEARena: Datenschutzerklärung</title>
-<meta name="description" content="NEARena erhebt keine personenbezogenen Daten: keine Konten, keine Server, keine Werbung, kein Tracking.">
+<meta name="description" content="Keine personenbezogenen Daten, keine Konten, keine Werbung, kein Tracking. Spielen über das Internet ist freiwillig und nutzt Epic Online Services.">
 <meta name="theme-color" content="#0C101C">
 <link rel="icon" type="image/png" href="../img/icon.png">
-<link rel="stylesheet" href="../style.css?v=21018a34">
+<link rel="stylesheet" href="../style.css?v=d7f0e97f">
 <!-- alternates -->
 <link rel="alternate" hreflang="en" href="../privacy.html">
 <link rel="alternate" hreflang="bg" href="../bg/privacy.html">
@@ -57,14 +57,14 @@
 <main class="doc">
   <div class="wrap">
     <h1>Datenschutzerklärung</h1>
-    <p class="updated">Zuletzt geändert: 16. Oktober 2026 · Gilt für die App NEARena für Android (com.simplia.nearena)</p>
+    <p class="updated">Zuletzt geändert: 23. Oktober 2026 · Gilt für die App NEARena für Android (com.simplia.nearena)</p>
 
     <div class="summary">
-      <strong>Kurz gesagt:</strong> Wir erheben keine personenbezogenen Daten. Es gibt keine Konten, keine Server, keine Werbung und kein Tracking, und außer dem Kauf über Google Play sendet die App nichts über das Internet.
+      <strong>Kurz gesagt:</strong> Wir erheben keine personenbezogenen Daten und haben keine eigenen Server. Es gibt keine Konten, keine Werbung und kein Tracking. Spielen über das Internet ist freiwillig: Nur dann nutzt die App Epic Online Services, um die Handys zu verbinden, und Epic erhält eine zufällige ID, die IP-Adresse und den Raumcode, nichts Persönliches.
     </div>
     <div class="facts">
       <div class="fact" style="--c: var(--cyan)"><b>0</b>Konten</div>
-      <div class="fact" style="--c: var(--coral)"><b>0</b>Server</div>
+      <div class="fact" style="--c: var(--coral)"><b>0</b>eigene Server</div>
       <div class="fact" style="--c: var(--gold)"><b>0</b>Werbung</div>
       <div class="fact" style="--c: var(--green)"><b>0</b>Tracker</div>
     </div>
@@ -86,13 +86,26 @@
       <li>Unter Android 8 bis 11 zeigt das System eine Standortberechtigung an, weil Android sie für die Suche nach Bluetooth-Geräten braucht. NEARena nutzt, liest und speichert deinen Standort nicht. Ab Android 12 fragt die App gar nicht nach dem Standort.</li>
     </ul>
 
+    <h2 style="--c: var(--green)">Spielen über das Internet (freiwillig)</h2>
+    <p>Ein Raum spielt über Bluetooth, außer sein Gastgeber lädt Freunde mit einem Raumcode über das Internet ein. Nur dann, und nur auf den Handys, die mitspielen, verbindet sich die App mit Epic Online Services, einem Dienst von Epic Games, der den Raum über seinen Code findet und die Handys verbindet. Wir nutzen ihn statt eigener Server. Wenn du nie über das Internet spielst, verbindet sich die App überhaupt nicht mit Epic.</p>
+    <p>Was Epic erhält:</p>
+    <ul>
+      <li>eine zufällige ID für die App auf diesem Handy (die „Device ID“-Anmeldung von Epic). Es gibt kein Epic-Konto: Epic erhält keinen Namen, keine E-Mail-Adresse und keine Telefonnummer;</li>
+      <li>deine IP-Adresse, die jede Verbindung über das Internet braucht;</li>
+      <li>den Raumcode und die zufälligen IDs der Handys im Raum, solange der Raum offen ist. Dabei werden keine Spitznamen und nichts Persönliches gespeichert, und sie verschwinden, wenn der Raum geschlossen wird;</li>
+      <li>technische Daten zur Verbindung, die die Bibliothek von Epic in der App sendet, etwa ihre Version und Fehler.</li>
+    </ul>
+    <p>Die Handys im Raum tauschen dann dasselbe aus wie über Bluetooth (Spitznamen, Spieler-IDs und Spielzüge), verschlüsselt. Meist verbinden sie sich direkt, und dann sieht jedes Handy im Raum die IP-Adressen der anderen, wie bei jeder direkten Verbindung im Internet. Wenn ein Netz keine direkte Verbindung zulässt, laufen die Daten über die Relay-Server von Epic, die sie nur weiterleiten.</p>
+    <p>Epic verarbeitet diese Daten für uns nur, um den Dienst zu betreiben, auf Servern in den USA und anderen Ländern. Wir selbst speichern nichts davon.</p>
+
     <h2 style="--c: var(--gold)">Berechtigungen</h2>
     <table>
       <tr><th>Berechtigung</th><th>Wofür</th></tr>
       <tr><td>BLUETOOTH_SCAN, BLUETOOTH_CONNECT, BLUETOOTH_ADVERTISE</td><td>Um ab Android 12 Räume zu finden, zu öffnen und ihnen beizutreten. Die Suche ist als nicht für den Standort genutzt erklärt.</td></tr>
       <tr><td>BLUETOOTH, BLUETOOTH_ADMIN, ACCESS_FINE_LOCATION</td><td>Dasselbe nur unter Android 8 bis 11, wo Android sie für Bluetooth verlangt.</td></tr>
       <tr><td>VIBRATE</td><td>Ein kurzes Vibrieren in manchen Spielen, zum Beispiel wenn jemand „Makao!“ ruft.</td></tr>
-      <tr><td>BILLING, INTERNET, ACCESS_NETWORK_STATE</td><td>Von der Kaufbibliothek von Google Play hinzugefügt: um Pro zu kaufen, und für die technischen Daten, die die Bibliothek an Google sendet.</td></tr>
+      <tr><td>INTERNET, ACCESS_NETWORK_STATE</td><td>Für das Spielen über das Internet, wenn du es wählst, und um Pro über Google Play zu kaufen.</td></tr>
+      <tr><td>BILLING</td><td>Von der Kaufbibliothek von Google Play hinzugefügt, um Pro zu kaufen.</td></tr>
     </table>
     <p>Die App fragt nicht nach Zugriff auf deine Kontakte, Kamera, dein Mikrofon, deine Fotos oder Dateien.</p>
 
@@ -104,12 +117,13 @@
     <ul>
       <li>Auf dem Handy: Einstellungen → Apps → NEARena → Speicher → Speicher löschen, oder deinstalliere die App. So wird alles gelöscht, was die App speichert.</li>
       <li>Die Kopie in der Android-Sicherung: in den Sicherungseinstellungen deines Google-Kontos (auf den meisten Handys Einstellungen → Google → Sicherung).</li>
+      <li>Die ID bei Epic: Speicher löschen oder die App deinstallieren entfernt ihren Schlüssel vom Handy, danach lässt sich die ID nicht mehr mit deinem Handy verbinden. Wenn du das nächste Mal über das Internet spielst, bekommt die App eine neue.</li>
       <li>Dein Kaufverlauf: Google speichert ihn; du siehst und verwaltest ihn unter <a href="https://myaccount.google.com/">myaccount.google.com</a>.</li>
-      <li>Wir haben keine Daten über dich, also gibt es bei uns nichts zu löschen. Wenn du uns schreibst, bestätigen wir dir das.</li>
+      <li>Wir selbst haben keine Daten über dich, also gibt es bei uns nichts zu löschen. Wenn du uns schreibst, bestätigen wir dir das.</li>
     </ul>
 
     <h2 style="--c: #B49CFF">Kinder</h2>
-    <p>NEARena erhebt von niemandem personenbezogene Daten, auch nicht von Kindern. Es gibt keine Werbung, keinen Chat und keinen Weg, Fremde zu kontaktieren: Du spielst nur mit Handys im selben Raum.</p>
+    <p>NEARena erhebt von niemandem personenbezogene Daten, auch nicht von Kindern. Es gibt keine Werbung, keinen Chat und keinen Weg, Fremde zu finden: Du spielst nur mit Handys im selben Raum oder mit Freunden, die deinen Raumcode haben.</p>
 
     <h2 style="--c: var(--cyan)">Änderungen</h2>
     <p>Wenn sich diese Erklärung ändert, erscheint die neue Fassung auf dieser Seite mit neuem Datum. Sollte die App jemals Daten erheben, steht das hier, bevor diese Version erscheint.</p>

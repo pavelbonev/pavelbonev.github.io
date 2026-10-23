@@ -20,6 +20,7 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
@@ -278,3 +279,17 @@ footer a:hover { color: var(--text); }
 .doc th { color: var(--text-2); font-weight: 600; font-size: 14px; }
 .doc td:first-child { font-family: ui-monospace, Consolas, monospace; font-size: 14px; color: var(--on-tonal); white-space: nowrap; }
 @media (max-width: 560px) { .doc td:first-child { white-space: normal; word-break: break-all; } }
+
+/* the invite's page (join.html): the room's code, big */
+.join { padding: 56px 0 80px; text-align: center; }
+.join .wrap { max-width: 640px; }
+.join h1 { font-size: clamp(30px, 5vw, 44px); font-weight: 800; }
+.code-card {
+  display: flex; flex-direction: column; align-items: center; gap: 4px; margin-top: 32px; padding: 26px 24px;
+  border-radius: var(--radius); background: linear-gradient(150deg, rgba(80, 200, 255, .14), var(--surface) 65%);
+  border: 1px solid rgba(80, 200, 255, .4);
+}
+.code-label { color: var(--text-2); font-size: 15px; font-weight: 600; }
+.code { font: 800 clamp(52px, 15vw, 80px)/1.1 ui-monospace, Consolas, monospace; letter-spacing: .06em; white-space: nowrap; }
+.join .how { margin-top: 22px; color: var(--text-2); font-size: 19px; }
+.join .cta { justify-content: center; margin-top: 28px; }
