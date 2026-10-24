@@ -11,14 +11,19 @@
 <link rel="icon" type="image/png" href="/nearena/img/icon.png">
 <style>body { margin: 0; background: #0C101C; }</style>
 <script>
-// GitHub Pages shows this page for every address of the site that has no file, among them the invite's link
-// .../nearena/j/K7M3QP (README "Поканата"). With NEARena installed Android opens the app before any page (App Links);
-// here the code goes on to join.html in the phone's language, after the # so it never reaches a server.
-// Any other missing page goes to the home page.
+// This page lies in the root of pavelbonev.github.io, not in nearena/: GitHub Pages shows it for every address of
+// the domain that has no file, among them the invite's link .../nearena/j/K7M3QP (README "Поканата"). With NEARena
+// installed Android and iOS open the app before any page (App Links, Universal Links); here the code goes on to
+// join.html in the phone's language, after the # so it never reaches a server. Any other missing page under
+// /nearena/ goes to NEARena's home page, one elsewhere on the domain to the domain's home page.
 (function () {
   var path = location.pathname;
+  if (path.indexOf('/nearena/') !== 0) {
+    location.replace('/');
+    return;
+  }
   var at = path.indexOf('/j/');
-  var site = at >= 0 ? path.slice(0, at + 1) : '/' + path.split('/')[1] + '/';
+  var site = at >= 0 ? path.slice(0, at + 1) : '/nearena/';
   if (at < 0) {
     location.replace(site);
     return;
