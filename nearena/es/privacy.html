@@ -7,7 +7,7 @@
 <meta name="description" content="Sin datos personales, sin cuentas, sin anuncios y sin seguimiento. Jugar por internet es opcional y usa Epic Online Services.">
 <meta name="theme-color" content="#0C101C">
 <link rel="icon" type="image/png" href="../img/icon.png">
-<link rel="stylesheet" href="../style.css?v=d7f0e97f">
+<link rel="stylesheet" href="../style.css?v=aaf256cb">
 <!-- alternates -->
 <link rel="alternate" hreflang="en" href="../privacy.html">
 <link rel="alternate" hreflang="bg" href="../bg/privacy.html">
@@ -57,7 +57,7 @@
 <main class="doc">
   <div class="wrap">
     <h1>Política de privacidad</h1>
-    <p class="updated">Última actualización: 24 de octubre de 2026 · Se aplica a la app NEARena para Android (com.simplia.nearena)</p>
+    <p class="updated">Última actualización: 25 de octubre de 2026 · Se aplica a la app NEARena para Android y iPhone (com.simplia.nearena)</p>
 
     <div class="summary">
       <strong>En resumen:</strong> No recogemos datos personales ni tenemos servidores propios. No hay cuentas, ni anuncios, ni seguimiento. Jugar por internet es opcional: solo entonces la app usa Epic Online Services para conectar los móviles, y Epic recibe un ID aleatorio, la dirección IP y el código de la sala, nada personal.
@@ -77,13 +77,15 @@
       <li>tus ajustes (nivel del bot, opciones del tablero y similares) y tus partidas gratis de Pro.</li>
     </ul>
     <p>Si la copia de seguridad de Android está activada, Android puede guardar una copia de estos datos en tu cuenta de Google para que vuelvan en un móvil nuevo. Eso lo decides tú en los ajustes del móvil. Al desinstalar la app, los datos se borran del móvil.</p>
+    <p>En el iPhone, si la copia de seguridad de iCloud está activada, iOS guarda una copia de estos datos en tu iCloud para que vuelvan en un iPhone nuevo. Eso lo decides tú en los ajustes del iPhone. Al eliminar la app, los datos se borran del iPhone.</p>
 
     <h2 style="--c: var(--coral)">Bluetooth</h2>
     <ul>
       <li>El Bluetooth solo sirve para conectar los móviles de una sala directamente entre sí.</li>
-      <li>Mientras eres anfitrión de una sala, los móviles cercanos que buscan salas pueden ver tu apodo y un código corto hecho a partir de tu ID de jugador, para que tus amigos te reconozcan antes de unirse.</li>
+      <li>Mientras eres anfitrión de una sala, los móviles cercanos que buscan salas pueden ver tu apodo y un código corto hecho a partir de tu ID de jugador, para que tus amigos te reconozcan antes de unirse. Un iPhone que es anfitrión de una sala solo muestra el apodo, sin ese código.</li>
       <li>Los móviles de una sala intercambian los apodos, los ID de jugador y las jugadas. No se envía nada más y nada sale de la sala.</li>
       <li>En Android 8 a 11 el sistema muestra un permiso de ubicación, porque Android lo necesita para buscar dispositivos Bluetooth. NEARena no usa, no lee ni guarda tu ubicación. En Android 12 y posteriores la app no pide la ubicación en absoluto.</li>
+      <li>En el iPhone, iOS pregunta una vez si NEARena puede usar el Bluetooth. La app no pide tu ubicación ni la usa.</li>
     </ul>
 
     <h2 style="--c: var(--green)">Jugar por internet (opcional)</h2>
@@ -94,13 +96,14 @@
       <li>tu dirección IP, que necesita cualquier conexión por internet;</li>
       <li>el código de la sala y los ID aleatorios de los móviles que hay en ella, mientras la sala está abierta. Con ellos no se guardan apodos ni nada personal, y desaparecen cuando se cierra la sala;</li>
       <li>cuando invitas por internet, un código hecho a partir del ID de jugador aleatorio de cada uno de tus favoritos y del tuyo (un hash: no el ID en sí, y sin apodo), para que tus favoritos encuentren la sala sin código. Desaparece con la sala;</li>
-      <li>datos técnicos y eventos que la biblioteca de Epic en la app envía junto con el ID aleatorio: su versión y la versión de Android del móvil, qué funciones suyas usó la app, cuánto tardaron sus solicitudes, los errores y cuándo se creó, se conectó o se cerró una sala. Epic los usa para estadísticas de su servicio.</li>
+      <li>datos técnicos y eventos que la biblioteca de Epic en la app envía junto con el ID aleatorio: su versión y la versión del sistema del móvil (Android o iOS), qué funciones suyas usó la app, cuánto tardaron sus solicitudes, los errores y cuándo se creó, se conectó o se cerró una sala. Epic los usa para estadísticas de su servicio.</li>
     </ul>
     <p>La única otra vez que la app se conecta a Epic es cuando abres «Unirse a una sala» y tienes favoritos con los que ya has jugado por internet: mientras esa pantalla está abierta, busca cada pocos segundos salas con tu código, para que las salas de tus favoritos aparezcan en el radar sin código de sala. Sin esos favoritos, esa pantalla solo usa Bluetooth.</p>
     <p>Después, los móviles de la sala intercambian lo mismo que por Bluetooth (apodos, ID de jugador y jugadas), cifrado. Normalmente se conectan directamente, y entonces cada móvil de la sala puede ver las direcciones IP de los demás, como en cualquier conexión directa por internet. Cuando una red no permite la conexión directa, los datos pasan por los servidores de retransmisión de Epic, que solo los reenvían.</p>
     <p>Epic trata estos datos por nuestra cuenta solo para que funcione el servicio, en servidores de Estados Unidos y otros países. Nosotros no guardamos nada de ello.</p>
 
     <h2 style="--c: var(--gold)">Permisos</h2>
+    <p>En Android, la app declara estos permisos:</p>
     <table>
       <tr><th>Permiso</th><th>Para qué</th></tr>
       <tr><td>BLUETOOTH_SCAN, BLUETOOTH_CONNECT, BLUETOOTH_ADVERTISE</td><td>Para buscar, abrir y unirse a salas en Android 12 y posteriores. La búsqueda está declarada como no usada para la ubicación.</td></tr>
@@ -109,20 +112,31 @@
       <tr><td>INTERNET, ACCESS_NETWORK_STATE</td><td>Para jugar por internet, si así lo eliges, y para comprar Pro en Google Play.</td></tr>
       <tr><td>BILLING</td><td>Lo añade la biblioteca de compras de Google Play, para comprar Pro.</td></tr>
     </table>
+    <p>En el iPhone, el único permiso que pide la app es el Bluetooth.</p>
     <p>La app no pide acceso a tus contactos, cámara, micrófono, fotos ni archivos.</p>
 
     <h2 style="--c: var(--green)">Compras</h2>
-    <p>NEARena Pro es una compra única a través de Google Play. Google gestiona el pago según la
+    <p>En Android, NEARena Pro es una compra única a través de Google Play. Google gestiona el pago según la
       <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>. Nunca vemos tu nombre, correo ni datos de pago; la app solo pregunta a Google Play si se ha comprado Pro. Google Play guarda tu historial de compras (si compraste Pro y cuándo), y la biblioteca de compras de Google en la app envía a Google datos de diagnóstico sobre la compra, según la misma política. Nada de ello nos llega.</p>
+    <p>En el iPhone, NEARena Pro es una compra única a través del App Store. Apple gestiona el pago según la
+      <a href="https://www.apple.com/legal/privacy/">Política de privacidad de Apple</a>. Nunca vemos tu nombre, correo ni datos de pago; la app solo pregunta al App Store si tu cuenta de Apple tiene Pro. Apple guarda tu historial de compras (si compraste Pro y cuándo). Nada de ello nos llega.</p>
 
     <h2 style="--c: var(--gold)">Borrar tus datos</h2>
+    <h3>En Android</h3>
     <ul>
       <li>En el móvil: Ajustes → Aplicaciones → NEARena → Almacenamiento → Borrar almacenamiento, o desinstala la app. Así se borra todo lo que guarda la app.</li>
       <li>La copia en la copia de seguridad de Android: en los ajustes de copia de seguridad de tu cuenta de Google (en la mayoría de móviles, Ajustes → Google → Copia de seguridad).</li>
       <li>El ID en Epic: borrar el almacenamiento o desinstalar la app elimina su clave del móvil, y después el ID ya no puede vincularse con tu móvil. La próxima vez que juegues por internet, la app obtendrá uno nuevo.</li>
       <li>Tu historial de compras: lo guarda Google; puedes verlo y gestionarlo en <a href="https://myaccount.google.com/">myaccount.google.com</a>.</li>
-      <li>Nosotros no tenemos ningún dato tuyo, así que no hay nada que borrar por nuestra parte. Si nos escribes, te lo confirmaremos.</li>
     </ul>
+    <h3>En el iPhone</h3>
+    <ul>
+      <li>En el iPhone: elimina la app (mantén pulsado su icono y elige «Eliminar app»). Así se borra todo lo que guarda la app.</li>
+      <li>La copia en iCloud: Ajustes → tu nombre → iCloud, en las copias de seguridad de este iPhone, donde puedes desactivar NEARena (eso borra su copia).</li>
+      <li>El ID en Epic: iOS puede guardar su clave en el llavero del iPhone incluso después de eliminar la app, pero la app, al instalarse de nuevo, borra esa clave antes de conectarse a Epic por primera vez y obtiene un ID nuevo. Después, el ID antiguo ya no puede vincularse con tu iPhone.</li>
+      <li>Tu historial de compras: lo guarda Apple; puedes verlo en <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>.</li>
+    </ul>
+    <p>Nosotros no tenemos ningún dato tuyo, así que no hay nada que borrar por nuestra parte. Si nos escribes, te lo confirmaremos.</p>
 
     <h2 style="--c: #B49CFF">Niños</h2>
     <p>NEARena no recoge datos personales de nadie, tampoco de niños. No hay anuncios, ni chat, ni forma de encontrar desconocidos: solo se juega con los móviles de la misma sala o con amigos que tienen el código de tu sala o están entre tus favoritos.</p>
@@ -131,8 +145,7 @@
     <p>Si esta política cambia, la nueva versión se publicará en esta página con una nueva fecha. Si la app empieza alguna vez a recoger datos, esta página lo dirá antes de que salga esa versión.</p>
 
     <h2 style="--c: var(--coral)">Contacto</h2>
-    <p>Preguntas sobre privacidad: escribe a la dirección de correo que aparece en
-      <a href="https://play.google.com/store/apps/details?id=com.simplia.nearena&amp;hl=es">la página de NEARena en Google Play</a>.</p>
+    <p>Preguntas sobre privacidad: escribe a <a href="mailto:pavelbonev@gmail.com">pavelbonev@gmail.com</a>.</p>
   </div>
 </main>
 
@@ -141,6 +154,7 @@
     <span>© 2026 <span class="ne">NE</span><span class="arena">ARena</span></span>
     <nav>
       <a href="index.html">Inicio</a>
+      <a href="support.html">Soporte</a>
       <a href="https://play.google.com/store/apps/details?id=com.simplia.nearena&amp;hl=es">Google Play</a>
     </nav>
   </div>

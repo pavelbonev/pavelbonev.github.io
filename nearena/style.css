@@ -279,6 +279,11 @@ footer a:hover { color: var(--text); }
 .doc th { color: var(--text-2); font-weight: 600; font-size: 14px; }
 .doc td:first-child { font-family: ui-monospace, Consolas, monospace; font-size: 14px; color: var(--on-tonal); white-space: nowrap; }
 @media (max-width: 560px) { .doc td:first-child { white-space: normal; word-break: break-all; } }
+.doc h3 { margin-top: 24px; font-size: 19px; font-weight: 700; }
+
+/* the support page (support.html): the e-mail, big */
+.summary .mail { margin-top: 0; font-size: clamp(21px, 6vw, 28px); font-weight: 800; overflow-wrap: anywhere; }
+.summary .mail + p { margin-top: 8px; }
 
 /* the invite's page (join.html): the room's code, big */
 .join { padding: 56px 0 80px; text-align: center; }
@@ -291,5 +296,5 @@ footer a:hover { color: var(--text); }
 }
 .code-label { color: var(--text-2); font-size: 15px; font-weight: 600; }
 .code { font: 800 clamp(52px, 15vw, 80px)/1.1 ui-monospace, Consolas, monospace; letter-spacing: .06em; white-space: nowrap; }
-.join .how { margin-top: 22px; color: var(--text-2); font-size: 19px; }
+.join .how { margin-top: 22px; color: var(--text-2); font-size: 19px; text-wrap: balance; }
 .join .cta { justify-content: center; margin-top: 28px; }

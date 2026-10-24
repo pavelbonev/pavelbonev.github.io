@@ -7,7 +7,7 @@
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#0C101C">
 <link rel="icon" type="image/png" href="img/icon.png">
-<link rel="stylesheet" href="style.css?v=d7f0e97f">
+<link rel="stylesheet" href="style.css?v=aaf256cb">
 <!-- alternates -->
 <link rel="alternate" hreflang="en" href="join.html">
 <link rel="alternate" hreflang="bg" href="bg/join.html">
@@ -60,10 +60,11 @@
       <span class="code" id="code"></span>
     </div>
     <p class="how" id="how">Open NEARena, tap “Join a room” and type the code.</p>
-    <p class="how" id="ios" hidden>NEARena is only for Android for now.</p>
+    <p class="how" id="ios" hidden>NEARena for iPhone is coming soon to the App Store.</p>
     <div class="cta" id="get">
       <a class="btn btn-cyan" id="open" hidden><span>Open NEARena</span></a>
-      <a class="btn btn-tonal" href="https://play.google.com/store/apps/details?id=com.simplia.nearena">
+      <a class="btn btn-tonal" id="appstore" hidden>Download on the App Store</a>
+      <a class="btn btn-tonal" id="play" href="https://play.google.com/store/apps/details?id=com.simplia.nearena">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 2.8v18.4c0 .6.6 1 1.2.7l15.4-8.9c.5-.3.5-1.1 0-1.4L5.2 2.1C4.6 1.8 4 2.2 4 2.8z"/></svg>
         Get it on Google Play
       </a>
@@ -77,15 +78,19 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="privacy.html">Privacy policy</a>
+      <a href="support.html">Support</a>
     </nav>
   </div>
 </footer>
 
 <script>
 // The code as RoomCode reads it (the app's letters, without dashes and spaces), shown as K7M-3QP. On Android the
-// button opens the app with the invite's link (it goes to Google Play when NEARena is not installed); an iPhone
-// gets a line that the app is Android only for now instead of the way into the app. The language menu keeps the code.
+// button opens the app with the invite's link (it goes to Google Play when NEARena is not installed). An iPhone with
+// NEARena never gets here (Universal Links open the app); without it, it gets the App Store, and until NEARena is
+// there a line that it is coming soon. The language menu keeps the code.
 (function () {
+  // NEARena's page in the App Store once it is released (docs/store/ios/README.md): 'https://apps.apple.com/app/id6826673541'
+  var APP_STORE = '';
   var LETTERS = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
   var code = decodeURIComponent(location.hash.slice(1)).toUpperCase().replace(/[\s._-]/g, '');
   for (var i = 0; i < code.length; i++) {
@@ -100,9 +105,16 @@
   }
   // an iPad says Macintosh, but has a touch screen
   if (/iPhone|iPad|iPod/.test(navigator.userAgent) || (/Macintosh/.test(navigator.userAgent) && navigator.maxTouchPoints > 1)) {
-    document.getElementById('how').hidden = true;
-    document.getElementById('get').hidden = true;
-    document.getElementById('ios').hidden = false;
+    document.getElementById('play').hidden = true;
+    if (APP_STORE) {
+      var store = document.getElementById('appstore');
+      store.href = APP_STORE;
+      store.hidden = false;
+    } else {
+      document.getElementById('how').hidden = true;
+      document.getElementById('get').hidden = true;
+      document.getElementById('ios').hidden = false;
+    }
   } else if (/Android/i.test(navigator.userAgent)) {
     var open = document.getElementById('open');
     open.href = 'intent://pavelbonev.github.io/nearena/j/' + code

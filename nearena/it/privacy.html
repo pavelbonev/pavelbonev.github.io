@@ -7,7 +7,7 @@
 <meta name="description" content="Niente dati personali, account, pubblicità o tracciamento. Il gioco via internet è facoltativo e usa Epic Online Services.">
 <meta name="theme-color" content="#0C101C">
 <link rel="icon" type="image/png" href="../img/icon.png">
-<link rel="stylesheet" href="../style.css?v=d7f0e97f">
+<link rel="stylesheet" href="../style.css?v=aaf256cb">
 <!-- alternates -->
 <link rel="alternate" hreflang="en" href="../privacy.html">
 <link rel="alternate" hreflang="bg" href="../bg/privacy.html">
@@ -57,7 +57,7 @@
 <main class="doc">
   <div class="wrap">
     <h1>Informativa sulla privacy</h1>
-    <p class="updated">Ultimo aggiornamento: 24 ottobre 2026 · Vale per l’app NEARena per Android (com.simplia.nearena)</p>
+    <p class="updated">Ultimo aggiornamento: 25 ottobre 2026 · Vale per l’app NEARena per Android e iPhone (com.simplia.nearena)</p>
 
     <div class="summary">
       <strong>In breve:</strong> Non raccogliamo dati personali e non abbiamo server nostri. Niente account, pubblicità o tracciamento. Il gioco via internet è facoltativo: solo allora l’app usa Epic Online Services per collegare i telefoni, ed Epic riceve un ID casuale, l’indirizzo IP e il codice della stanza, niente di personale.
@@ -77,13 +77,15 @@
       <li>le tue impostazioni (livello del bot, opzioni della tavola e simili) e le tue prove gratuite di Pro.</li>
     </ul>
     <p>Se il backup di Android è attivo, Android può tenere una copia di questi dati nel tuo account Google, così tornano su un nuovo telefono. Lo decidi tu nelle impostazioni del telefono. Disinstallando l’app, i dati vengono cancellati dal telefono.</p>
+    <p>Su iPhone, se il backup di iCloud è attivo, iOS tiene una copia di questi dati nel tuo iCloud, così tornano su un nuovo iPhone. Lo decidi tu nelle impostazioni dell’iPhone. Eliminando l’app, i dati vengono cancellati dall’iPhone.</p>
 
     <h2 style="--c: var(--coral)">Bluetooth</h2>
     <ul>
       <li>Il Bluetooth serve solo a collegare direttamente tra loro i telefoni di una stanza.</li>
-      <li>Mentre ospiti una stanza, i telefoni vicini che cercano stanze vedono il tuo nickname e un breve codice ricavato dal tuo ID giocatore, così gli amici ti riconoscono prima di entrare.</li>
+      <li>Mentre ospiti una stanza, i telefoni vicini che cercano stanze vedono il tuo nickname e un breve codice ricavato dal tuo ID giocatore, così gli amici ti riconoscono prima di entrare. Un iPhone che ospita una stanza mostra solo il nickname, senza quel codice.</li>
       <li>I telefoni di una stanza si scambiano i nickname, gli ID giocatore e le mosse. Nient’altro viene inviato e niente esce dalla stanza.</li>
       <li>Su Android da 8 a 11 il sistema mostra un permesso di posizione, perché Android ne ha bisogno per cercare dispositivi Bluetooth. NEARena non usa, non legge e non conserva la tua posizione. Da Android 12 in poi l’app non chiede affatto la posizione.</li>
+      <li>Su iPhone, iOS chiede una volta se NEARena può usare il Bluetooth. L’app non chiede la tua posizione e non la usa.</li>
     </ul>
 
     <h2 style="--c: var(--green)">Giocare via internet (facoltativo)</h2>
@@ -94,13 +96,14 @@
       <li>il tuo indirizzo IP, che serve a ogni connessione via internet;</li>
       <li>il codice della stanza e gli ID casuali dei telefoni nella stanza, finché la stanza è aperta. Con essi non si conservano nickname né niente di personale, e spariscono quando la stanza si chiude;</li>
       <li>quando inviti via internet, un codice ricavato dall’ID giocatore casuale di ciascuno dei tuoi preferiti e dal tuo (un hash: non l’ID stesso, e nessun nickname), così i tuoi preferiti trovano la stanza senza codice. Sparisce con la stanza;</li>
-      <li>dati tecnici ed eventi che la libreria di Epic nell’app invia insieme all’ID casuale: la sua versione e la versione di Android del telefono, quali sue funzioni l’app ha usato, quanto sono durate le sue richieste, gli errori e quando una stanza è stata creata, collegata o chiusa. Epic li usa per statistiche sul suo servizio.</li>
+      <li>dati tecnici ed eventi che la libreria di Epic nell’app invia insieme all’ID casuale: la sua versione e la versione del sistema del telefono (Android o iOS), quali sue funzioni l’app ha usato, quanto sono durate le sue richieste, gli errori e quando una stanza è stata creata, collegata o chiusa. Epic li usa per statistiche sul suo servizio.</li>
     </ul>
     <p>L’unico altro caso in cui l’app si collega a Epic è quando apri «Entra in una stanza» e hai preferiti con cui hai già giocato via internet: finché quella schermata è aperta, cerca ogni pochi secondi le stanze con il tuo codice, così le stanze dei tuoi preferiti compaiono sul radar senza codice della stanza. Senza preferiti così, quella schermata usa solo il Bluetooth.</p>
     <p>Poi i telefoni della stanza si scambiano le stesse cose che via Bluetooth (nickname, ID giocatore e mosse), cifrate. Di solito si collegano direttamente, e allora ogni telefono della stanza può vedere gli indirizzi IP degli altri, come in ogni connessione diretta via internet. Quando una rete non permette una connessione diretta, i dati passano per i server relay di Epic, che si limitano a inoltrarli.</p>
     <p>Epic tratta questi dati per nostro conto solo per far funzionare il servizio, su server negli Stati Uniti e in altri paesi. Noi non ne conserviamo nulla.</p>
 
     <h2 style="--c: var(--gold)">Permessi</h2>
+    <p>Su Android l’app dichiara questi permessi:</p>
     <table>
       <tr><th>Permesso</th><th>Perché</th></tr>
       <tr><td>BLUETOOTH_SCAN, BLUETOOTH_CONNECT, BLUETOOTH_ADVERTISE</td><td>Per trovare, aprire ed entrare nelle stanze da Android 12 in poi. La ricerca è dichiarata come non usata per la posizione.</td></tr>
@@ -109,20 +112,31 @@
       <tr><td>INTERNET, ACCESS_NETWORK_STATE</td><td>Per giocare via internet, se lo scegli, e per comprare Pro su Google Play.</td></tr>
       <tr><td>BILLING</td><td>Lo aggiunge la libreria di acquisto di Google Play, per comprare Pro.</td></tr>
     </table>
+    <p>Su iPhone l’unico permesso che l’app chiede è il Bluetooth.</p>
     <p>L’app non chiede l’accesso ai tuoi contatti, alla fotocamera, al microfono, alle foto o ai file.</p>
 
     <h2 style="--c: var(--green)">Acquisti</h2>
-    <p>NEARena Pro è un acquisto unico tramite Google Play. Google gestisce il pagamento secondo le
+    <p>Su Android NEARena Pro è un acquisto unico tramite Google Play. Google gestisce il pagamento secondo le
       <a href="https://policies.google.com/privacy">Norme sulla privacy di Google</a>. Non vediamo mai il tuo nome, la tua e-mail o i dati di pagamento; l’app chiede a Google Play solo se Pro è stato acquistato. Google Play conserva la cronologia dei tuoi acquisti (se e quando hai comprato Pro), e la libreria di acquisto di Google nell’app invia a Google dati diagnostici sull’acquisto, secondo le stesse norme. Niente di tutto ciò arriva a noi.</p>
+    <p>Su iPhone NEARena Pro è un acquisto unico tramite l’App Store. Apple gestisce il pagamento secondo le
+      <a href="https://www.apple.com/legal/privacy/">norme sulla privacy di Apple</a>. Non vediamo mai il tuo nome, la tua e-mail o i dati di pagamento; l’app chiede all’App Store solo se il tuo Account Apple ha Pro. Apple conserva la cronologia dei tuoi acquisti (se e quando hai comprato Pro). Niente di tutto ciò arriva a noi.</p>
 
     <h2 style="--c: var(--gold)">Cancellare i tuoi dati</h2>
+    <h3>Su Android</h3>
     <ul>
       <li>Sul telefono: Impostazioni → App → NEARena → Spazio di archiviazione → Cancella spazio di archiviazione, oppure disinstalla l’app. Così sparisce tutto ciò che l’app conserva.</li>
       <li>La copia nel backup di Android: nelle impostazioni di backup del tuo account Google (sulla maggior parte dei telefoni Impostazioni → Google → Backup).</li>
       <li>L’ID presso Epic: cancellare lo spazio di archiviazione o disinstallare l’app elimina la sua chiave dal telefono, e dopo l’ID non può più essere collegato al tuo telefono. La prossima volta che giochi via internet, l’app ne riceve uno nuovo.</li>
       <li>La cronologia degli acquisti: la conserva Google; puoi vederla e gestirla su <a href="https://myaccount.google.com/">myaccount.google.com</a>.</li>
-      <li>Noi stessi non abbiamo alcun dato su di te, quindi da noi non c’è niente da cancellare. Se ci scrivi, te lo confermeremo.</li>
     </ul>
+    <h3>Su iPhone</h3>
+    <ul>
+      <li>Sull’iPhone: elimina l’app (tieni premuta la sua icona, poi «Rimuovi app» → «Elimina app»). Così sparisce tutto ciò che l’app conserva.</li>
+      <li>La copia nel backup di iCloud: Impostazioni → il tuo nome → iCloud, nei backup di questo iPhone, dove puoi disattivare NEARena (così si cancella la sua copia).</li>
+      <li>L’ID presso Epic: iOS può conservare la sua chiave nel portachiavi dell’iPhone anche dopo l’eliminazione dell’app, ma l’app installata di nuovo cancella quella chiave prima di collegarsi per la prima volta a Epic e riceve un nuovo ID. Dopo, il vecchio ID non può più essere collegato al tuo iPhone.</li>
+      <li>La cronologia degli acquisti: la conserva Apple; puoi vederla su <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>.</li>
+    </ul>
+    <p>Noi stessi non abbiamo alcun dato su di te, quindi da noi non c’è niente da cancellare. Se ci scrivi, te lo confermeremo.</p>
 
     <h2 style="--c: #B49CFF">Bambini</h2>
     <p>NEARena non raccoglie dati personali da nessuno, bambini compresi. Niente pubblicità, niente chat e nessun modo di trovare sconosciuti: si gioca solo con i telefoni nella stessa stanza o con amici che hanno il codice della tua stanza o sono tra i tuoi preferiti.</p>
@@ -131,8 +145,7 @@
     <p>Se questa informativa cambia, la nuova versione sarà pubblicata su questa pagina con una nuova data. Se l’app dovesse mai iniziare a raccogliere dati, questa pagina lo dirà prima che esca quella versione.</p>
 
     <h2 style="--c: var(--coral)">Contatti</h2>
-    <p>Domande sulla privacy: scrivi all’indirizzo e-mail indicato nella
-      <a href="https://play.google.com/store/apps/details?id=com.simplia.nearena&amp;hl=it">pagina di NEARena su Google Play</a>.</p>
+    <p>Domande sulla privacy: scrivi a <a href="mailto:pavelbonev@gmail.com">pavelbonev@gmail.com</a>.</p>
   </div>
 </main>
 
@@ -141,6 +154,7 @@
     <span>© 2026 <span class="ne">NE</span><span class="arena">ARena</span></span>
     <nav>
       <a href="index.html">Home</a>
+      <a href="support.html">Assistenza</a>
       <a href="https://play.google.com/store/apps/details?id=com.simplia.nearena&amp;hl=it">Google Play</a>
     </nav>
   </div>
