@@ -650,7 +650,7 @@ section.alt {
   }
 }
 
-/* Subscription */
+/* Free: what you get */
 
 .plans {
   display: grid;
@@ -658,6 +658,11 @@ section.alt {
   gap: 20px;
   max-width: 860px;
   margin: 0 auto 24px;
+}
+
+.plans.single {
+  grid-template-columns: 1fr;
+  max-width: 460px;
 }
 
 .plan {
