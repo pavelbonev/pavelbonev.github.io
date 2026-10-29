@@ -227,6 +227,7 @@ section { padding: 88px 0; }
 /* free and pro */
 .plans { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 40px; }
 @media (max-width: 760px) { .plans { grid-template-columns: 1fr; } }
+.plans.one { grid-template-columns: 1fr; max-width: 560px; }
 .plan { border-radius: var(--radius); padding: 30px; background: var(--surface); border: 1px solid var(--surface-stroke); }
 .plan.pro { background: linear-gradient(150deg, #3A2E12, var(--surface) 70%); border-color: rgba(255, 200, 87, .45); }
 .plan h3 { font-size: 26px; }
