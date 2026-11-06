@@ -86,11 +86,11 @@
 <script>
 // The code as RoomCode reads it (the app's letters, without dashes and spaces), shown as K7M-3QP. On Android the
 // button opens the app with the invite's link (it goes to Google Play when NEARena is not installed). An iPhone with
-// NEARena never gets here (Universal Links open the app); without it, it gets the App Store, and until NEARena is
-// there a line that it is coming soon. The language menu keeps the code.
+// NEARena never gets here (Universal Links open the app); without it, it gets the App Store (with APP_STORE empty
+// a line that it is coming soon instead). The language menu keeps the code.
 (function () {
-  // NEARena's page in the App Store once it is released (docs/store/ios/README.md): 'https://apps.apple.com/app/id6826673541'
-  var APP_STORE = '';
+  // NEARena's page in the App Store (docs/store/ios/README.md); '' would say it is coming soon
+  var APP_STORE = 'https://apps.apple.com/app/id6826673541';
   var LETTERS = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
   var code = decodeURIComponent(location.hash.slice(1)).toUpperCase().replace(/[\s._-]/g, '');
   for (var i = 0; i < code.length; i++) {
